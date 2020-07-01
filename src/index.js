@@ -17,6 +17,28 @@ ReactDOM.render(
             neutral: 6
         }}
     />
+      <Card
+          width={5}
+          height={5}
+          options={{
+              black: 1,
+              silver: 1,
+              home: 9,
+              guest: 8,
+              neutral: 6
+          }}
+      />
+      <Card
+          width={5}
+          height={5}
+          options={{
+              black: 1,
+              silver: 1,
+              home: 9,
+              guest: 8,
+              neutral: 6
+          }}
+      />
   </React.StrictMode>,
   document.getElementById('root')
 );

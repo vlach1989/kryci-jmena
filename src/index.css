@@ -14,11 +14,30 @@ code {
 
 .card {
   display: flex;
+  flex-direction: column;
+  width: 60mm;
+  height: 60mm;
+  border: 3px solid white;
+  margin-bottom: 1rem;
+}
+
+.card-row {
+  display: flex;
+  flex: 1;
+  border-bottom: 3px solid white;
+}
+
+.card-row:last-child {
+  border-bottom: 0;
 }
 
 .cell {
-  width: 20px;
-  height: 20px;
+  flex: 1;
+  border-right: 3px solid white;
+}
+
+.card-row .cell:last-child {
+  border-right: 0;
 }
 
 .cell.black {
@@ -38,6 +57,6 @@ code {
 }
 
 .cell.guest {
-  background: blue;
+  background: green;
 }
 
