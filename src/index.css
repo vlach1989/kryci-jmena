@@ -11,3 +11,33 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.card {
+  display: flex;
+}
+
+.cell {
+  width: 20px;
+  height: 20px;
+}
+
+.cell.black {
+  background: black;
+}
+
+.cell.neutral {
+  background: #c1c16e;
+}
+
+.cell.silver {
+  background: #808080;
+}
+
+.cell.home {
+  background: red;
+}
+
+.cell.guest {
+  background: blue;
+}
+
