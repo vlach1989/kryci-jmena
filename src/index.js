@@ -2,33 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import * as serviceWorker from './serviceWorker';
-import Card from "./components/Card";
+import Page from "./components/Page";
 
 ReactDOM.render(
   <React.StrictMode>
-    <Card
-        width={5}
-        height={5}
-        options={{
-            black: 1,
-            silver: 1,
-            home: 9,
-            guest: 8,
-            neutral: 6
-        }}
-    />
-      <Card
-          width={5}
-          height={5}
-          options={{
-              black: 1,
-              silver: 1,
-              home: 9,
-              guest: 8,
-              neutral: 6
-          }}
-      />
-      <Card
+      <Page
           width={5}
           height={5}
           options={{

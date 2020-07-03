@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
 }
 
 code {
@@ -12,13 +13,62 @@ code {
     monospace;
 }
 
+.page {
+  display: flex;
+  flex-wrap: wrap;
+  width: 210mm;
+  border: 1px solid;
+  padding: 5mm;
+  justify-content: flex-start;
+}
+
+.card-wrapper {
+  border-right: 1px solid #cccccc;
+  border-bottom: 1px solid #cccccc;
+  position: relative;
+  width: 55mm;
+  height: 55mm;
+  padding: 7mm;
+  display: flex;
+  background: #c6b296;
+}
+
+.card-starter {
+  position: absolute;
+  width: 20%;
+  height: 20%;
+  background: red;
+}
+
+.card-starter.left {
+  left: 0;
+  top: 40%;
+  width: 2mm;
+}
+
+.card-starter.right {
+  right: 0;
+  top: 40%;
+  width: 2mm;
+}
+
+.card-starter.top {
+  left: 40%;
+  top: 0;
+  height: 2mm;
+}
+
+.card-starter.bottom {
+  left: 40%;
+  bottom: 0;
+  height: 2mm;
+}
+
 .card {
+  flex: 1;
   display: flex;
   flex-direction: column;
-  width: 60mm;
-  height: 60mm;
   border: 3px solid white;
-  margin-bottom: 1rem;
 }
 
 .card-row {
@@ -52,11 +102,13 @@ code {
   background: #808080;
 }
 
-.cell.home {
+.cell.home,
+.card-starter.home {
   background: red;
 }
 
-.cell.guest {
+.cell.guest,
+.card-starter.guest {
   background: green;
 }
 

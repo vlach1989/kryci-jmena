@@ -47,6 +47,9 @@ class Card extends React.PureComponent {
     };
 
     renderGrid(items, itemsInRow) {
+        const options = this.props.options;
+        const background = options.home > options.guest ? 'home' : 'guest';
+
         let grid = [];
         let row = [];
         _.forEach(items, (item, index) => {
@@ -58,13 +61,20 @@ class Card extends React.PureComponent {
         });
 
         return (
-            <div className="card">
-                {_.map(grid, row => (
-                        <div className="card-row">
-                            {_.map(row, cell => (<div className={`cell ${cell}`}/>))}
-                        </div>
-                    )
-                )}
+            <div className="card-wrapper">
+                <div className={"card-starter left " + background}/>
+                <div className={"card-starter top " + background}/>
+                <div className={"card-starter right " + background}/>
+                <div className={"card-starter bottom " + background}/>
+
+                <div className="card">
+                    {_.map(grid, row => (
+                            <div className="card-row">
+                                {_.map(row, cell => (<div className={`cell ${cell}`}/>))}
+                            </div>
+                        )
+                    )}
+                </div>
             </div>
         );
     }
