@@ -2,13 +2,32 @@ import React from 'react';
 import _ from "lodash";
 
 class Card extends React.PureComponent {
-    getRandomItem(counts, setting, limits) {
-        const item = _.sample(setting);
-        if (counts[item] < limits[item]) {
-            counts[item]++;
-            return item;
+    /**
+     * Place items randomly on empty spots in array
+     * @param list {Array} list of items
+     * @param item {string}
+     * @param count {number} how many times should be item in the list
+     * @return {Array}
+     */
+    placeItemsRandomly(list, item, count) {
+        for (let i=0; i<count; i++) {
+            let emptyIndex = this.getEmptyIndex(list);
+            list[emptyIndex] = item;
+        }
+        return list;
+    }
+
+    /**
+     * Get empty index in list
+     * @param list {Array}
+     * @return {number} index
+     */
+    getEmptyIndex(list) {
+        const randomIndex = _.random(list.length - 1);
+        if (!list[randomIndex]) {
+            return randomIndex;
         } else {
-            return this.getRandomItem(counts, setting, limits);
+            return this.getEmptyIndex(list);
         }
     }
 
@@ -17,21 +36,14 @@ class Card extends React.PureComponent {
         const options = props.options;
         const size = props.width * props.height;
 
-        // TODO keys length should match card size
-        const optionsKeys = Object.keys(options);
+        // Prepare array full of nulls
+        let list = _.times(size, _.constant(null));
 
-
-        let output = _.times(size, _.constant(null));
-        let counts = {};
-        _.each(optionsKeys, key => {
-           counts[key] = 0;
+        _.forIn(options, (count, itemKey) => {
+            list = this.placeItemsRandomly(list, itemKey, count);
         });
 
-        for (let i=0; i < output.length; i++) {
-            output[i] = this.getRandomItem(counts, optionsKeys, options);
-        }
-
-        return this.renderGrid(output, props.width);
+        return this.renderGrid(list, props.width);
     };
 
     renderGrid(items, itemsInRow) {
