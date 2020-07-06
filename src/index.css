@@ -16,7 +16,7 @@ code {
 .page {
   display: flex;
   flex-wrap: wrap;
-  width: 210mm;
+  width: calc(210mm - 10mm);
   border: 1px solid;
   padding: 5mm;
   justify-content: flex-start;
@@ -26,8 +26,8 @@ code {
   border-right: 1px solid #cccccc;
   border-bottom: 1px solid #cccccc;
   position: relative;
-  width: 55mm;
-  height: 55mm;
+  width: 52mm;
+  height: 52mm;
   padding: 7mm;
   display: flex;
   background: #c6b296;
