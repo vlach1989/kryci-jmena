@@ -13,6 +13,18 @@ code {
     monospace;
 }
 
+.maps-generator .form {
+  margin-bottom: 1rem;
+}
+
+.maps-generator .form > * {
+  margin-right: 1rem;
+}
+
+.maps-generator .form input {
+  width: 1.5rem;
+}
+
 .page {
   display: flex;
   flex-wrap: wrap;
