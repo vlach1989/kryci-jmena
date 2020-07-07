@@ -8,9 +8,9 @@ class MapsGenerator extends React.PureComponent {
         super(props);
 
         this.state = {
-            withSilver: 0,
-            classic: 0,
-            doubleBlack: 0
+            withSilver: 1,
+            classic: 1,
+            doubleBlack: 1
         }
     }
 
