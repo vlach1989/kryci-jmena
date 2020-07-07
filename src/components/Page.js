@@ -1,14 +1,8 @@
 import React from 'react';
 import _ from "lodash";
 import Card from "./Card";
-import html2pdf from "html2pdf.js";
 
 class Page extends React.PureComponent {
-    componentDidMount() {
-        var element = document.getElementById('page');
-        html2pdf(element, {margin: 0});
-    }
-
     render() {
         return (
             <div className="page" id="page">

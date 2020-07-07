@@ -2,21 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import * as serviceWorker from './serviceWorker';
-import Page from "./components/Page";
+import MapsGenerator from "./components/MapsGenerator";
 
 ReactDOM.render(
   <React.StrictMode>
-      <Page
-          width={5}
-          height={5}
-          options={{
-              black: 1,
-              silver: 1,
-              home: 9,
-              guest: 8,
-              neutral: 6
-          }}
-      />
+      <MapsGenerator/>
   </React.StrictMode>,
   document.getElementById('root')
 );
