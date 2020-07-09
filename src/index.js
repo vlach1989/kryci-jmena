@@ -3,10 +3,12 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import * as serviceWorker from './serviceWorker';
 import MapsGenerator from "./components/maps/MapsGenerator";
+import WordsGenerator from "./components/words/WordsGenerator";
 
 ReactDOM.render(
   <React.StrictMode>
-      <MapsGenerator/>
+      {/*<MapsGenerator/>*/}
+      <WordsGenerator/>
   </React.StrictMode>,
   document.getElementById('root')
 );

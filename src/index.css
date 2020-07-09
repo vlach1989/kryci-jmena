@@ -34,6 +34,13 @@ code {
   justify-content: flex-start;
 }
 
+.word-page {
+    display: flex;
+    flex-wrap: wrap;
+    width: 210mm;
+    justify-content: flex-start;
+}
+
 .card-wrapper {
   border-right: 1px solid #cccccc;
   border-bottom: 1px solid #cccccc;
@@ -123,4 +130,34 @@ code {
 .card-starter.guest {
   background: green;
 }
+
+.word {
+    border-left: 1px solid #cccccc;
+    border-bottom: 1px solid #cccccc;
+    width: calc(68mm - 2px);
+    height: calc(36mm - 2px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.word:nth-child(3n) {
+    border-right: 1px solid #cccccc;
+}
+
+.word:nth-child(1),
+.word:nth-child(2),
+.word:nth-child(3) {
+    border-top: 1px solid #cccccc;
+}
+
+.word > div {
+    font-size: 1.8rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.word.smaller > div {
+    font-size: 1.6rem;
+}
+
 
