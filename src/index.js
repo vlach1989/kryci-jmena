@@ -12,6 +12,8 @@ import * as serviceWorker from './serviceWorker';
 import MapsGenerator from "./components/maps/MapsGenerator";
 import WordsGenerator from "./components/words/WordsGenerator";
 
+const path = "/kryci-jmena"
+
 ReactDOM.render(
   <React.StrictMode>
       <Router>
@@ -19,10 +21,10 @@ ReactDOM.render(
               {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
               <Switch>
-                  <Route path="/words">
+                  <Route path={`${path}/words`}>
                       <WordsGenerator />
                   </Route>
-                  <Route path="/maps">
+                  <Route path={`${path}/maps`}>
                       <MapsGenerator />
                   </Route>
                   <Route path="/">
@@ -30,10 +32,10 @@ ReactDOM.render(
                       <nav>
                           <ul>
                               <li>
-                                  <Link to="/maps">Generátor map</Link>
+                                  <Link to={`${path}/maps`}>Generátor map</Link>
                               </li>
                               <li>
-                                  <Link to="/words">Vytváření slov</Link>
+                                  <Link to={`${path}/words`}>Vytváření slov</Link>
                               </li>
                           </ul>
                       </nav>
