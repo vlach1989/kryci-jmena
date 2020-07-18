@@ -18,7 +18,14 @@ button {
 }
 
 .maps-generator .form {
-  margin-bottom: 1rem;
+  margin-right: 1rem;
+  margin-bottom: .5rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.maps-generator .form label {
+  margin-bottom: .5rem;
 }
 
 .maps-generator .form > * {
