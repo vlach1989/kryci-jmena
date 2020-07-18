@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "3efa7aa4f15dda7b986123ed533cf325",
+    "revision": "32aa042340a4c648db9bc5ce12a192fe",
     "url": "/kryci-jmena/index.html"
   },
   {
-    "revision": "bcceb56a8696200c3839",
+    "revision": "12915bb8b94e0fc2dfb7",
     "url": "/kryci-jmena/static/css/main.088370fb.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/kryci-jmena/static/js/2.8f4bc2fe.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "bcceb56a8696200c3839",
-    "url": "/kryci-jmena/static/js/main.94347cfb.chunk.js"
+    "revision": "12915bb8b94e0fc2dfb7",
+    "url": "/kryci-jmena/static/js/main.486ccf7b.chunk.js"
   },
   {
     "revision": "3356551f9438c6a635df",
