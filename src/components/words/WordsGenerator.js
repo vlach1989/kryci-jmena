@@ -25,9 +25,10 @@ class WordsGenerator extends React.PureComponent {
         }
 
         return (
-            <>
-                <button onClick={this.onGenerate}>Save to PDF</button>
-                <div id="words">
+            <div className="words-generator">
+                <h2>Vytváření slov</h2>
+                <button onClick={this.onGenerate}>Ulož do PDF</button>
+                <div className="words" id="words">
                     {listPerPage.map(page =>
                         <>
                             <div className="word-page" id="page">
@@ -51,7 +52,7 @@ class WordsGenerator extends React.PureComponent {
                         </>
                     )}
                 </div>
-            </>
+            </div>
         );
     };
 }

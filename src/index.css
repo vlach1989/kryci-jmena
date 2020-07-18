@@ -23,6 +23,11 @@ code {
 
 .maps-generator .form input {
   width: 1.5rem;
+  margin-left: .25rem;
+}
+
+.maps, .words {
+    margin-top: 1rem;
 }
 
 .page {

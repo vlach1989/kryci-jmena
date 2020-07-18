@@ -32,21 +32,23 @@ class MapsGenerator extends React.PureComponent {
 
         return (
             <div className="maps-generator">
+                <h2>Generátor map</h2>
+                <p>Pro náhodné generování map zadej počet stránek pro jednotlivé verze do políček níže</p>
                 <div className="form">
                     <label>
-                        Classic:
+                        Klasická hra:
                         <input type="text" value={this.state.classic} onChange={this.onCountChange.bind(this, 'classic')}/>
                     </label>
                     <label>
-                        With silver:
+                        Černá a stříbrná:
                         <input type="text" value={this.state.withSilver} onChange={this.onCountChange.bind(this, 'withSilver')}/>
                     </label>
                     <label>
-                        Double black:
+                        Dvě černé:
                         <input type="text" value={this.state.doubleBlack} onChange={this.onCountChange.bind(this, 'doubleBlack')}/>
                     </label>
-                    <button onClick={this.onGenerate}>Save to PDF</button>
                 </div>
+                <button onClick={this.onGenerate}>Ulož do PDF</button>
                 <div className="maps" id="maps">
                     {classic.map(item => (
                         <>
