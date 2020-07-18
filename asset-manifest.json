@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/kryci-jmena/static/css/main.088370fb.chunk.css",
+    "main.css": "/kryci-jmena/static/css/main.a1687e12.chunk.css",
     "main.js": "/kryci-jmena/static/js/main.486ccf7b.chunk.js",
     "main.js.map": "/kryci-jmena/static/js/main.486ccf7b.chunk.js.map",
     "runtime-main.js": "/kryci-jmena/static/js/runtime-main.35cdd8ac.js",
@@ -8,15 +8,15 @@
     "static/js/2.8f4bc2fe.chunk.js": "/kryci-jmena/static/js/2.8f4bc2fe.chunk.js",
     "static/js/2.8f4bc2fe.chunk.js.map": "/kryci-jmena/static/js/2.8f4bc2fe.chunk.js.map",
     "index.html": "/kryci-jmena/index.html",
-    "precache-manifest.120ce500bf539fcdaf21835c42ae2189.js": "/kryci-jmena/precache-manifest.120ce500bf539fcdaf21835c42ae2189.js",
+    "precache-manifest.32512d6c823ed047d1d1dc78b8bd945f.js": "/kryci-jmena/precache-manifest.32512d6c823ed047d1d1dc78b8bd945f.js",
     "service-worker.js": "/kryci-jmena/service-worker.js",
-    "static/css/main.088370fb.chunk.css.map": "/kryci-jmena/static/css/main.088370fb.chunk.css.map",
+    "static/css/main.a1687e12.chunk.css.map": "/kryci-jmena/static/css/main.a1687e12.chunk.css.map",
     "static/js/2.8f4bc2fe.chunk.js.LICENSE.txt": "/kryci-jmena/static/js/2.8f4bc2fe.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.35cdd8ac.js",
     "static/js/2.8f4bc2fe.chunk.js",
-    "static/css/main.088370fb.chunk.css",
+    "static/css/main.a1687e12.chunk.css",
     "static/js/main.486ccf7b.chunk.js"
   ]
 }

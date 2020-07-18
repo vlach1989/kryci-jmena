@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/kryci-jmena/precache-manifest.120ce500bf539fcdaf21835c42ae2189.js"
+  "/kryci-jmena/precache-manifest.32512d6c823ed047d1d1dc78b8bd945f.js"
 );
 
 self.addEventListener('message', (event) => {
