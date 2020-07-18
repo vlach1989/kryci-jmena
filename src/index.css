@@ -13,6 +13,10 @@ code {
     monospace;
 }
 
+button {
+    margin-bottom: 1rem;
+}
+
 .maps-generator .form {
   margin-bottom: 1rem;
 }
@@ -26,8 +30,15 @@ code {
   margin-left: .25rem;
 }
 
+textarea {
+    display: block;
+    margin: 0 1rem 1rem 0;
+    width: 90%;
+    max-width: 30rem;
+}
+
 .maps, .words {
-    margin-top: 1rem;
+    /*margin-top: 1rem;*/
 }
 
 .page {
@@ -139,7 +150,7 @@ code {
 .word {
     border-left: 1px solid #cccccc;
     border-bottom: 1px solid #cccccc;
-    width: calc(68mm - 2px);
+    width: calc(68.5mm - 2px);
     height: calc(36mm - 2px);
     display: flex;
     align-items: center;
